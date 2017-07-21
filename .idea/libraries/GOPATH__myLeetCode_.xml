@@ -1,0 +1,37 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;myLeetCode&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../AlgorithmDemos" />
+      <root url="file://$PROJECT_DIR$/../lib" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../awesomeProject" />
+      <root url="file://$PROJECT_DIR$/../yongxiumjsrv" />
+      <root url="file://$PROJECT_DIR$/../libmahjong-1.0" />
+      <root url="file://$PROJECT_DIR$/../douyudemo" />
+      <root url="file://$PROJECT_DIR$/../photoweb" />
+      <root url="file://$PROJECT_DIR$/../../../Workspace/src/golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../Workspace/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../../../Workspace/src/zonst" />
+      <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../AlgorithmDemos" />
+      <root url="file://$PROJECT_DIR$/../lib" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../awesomeProject" />
+      <root url="file://$PROJECT_DIR$/../yongxiumjsrv" />
+      <root url="file://$PROJECT_DIR$/../libmahjong-1.0" />
+      <root url="file://$PROJECT_DIR$/../douyudemo" />
+      <root url="file://$PROJECT_DIR$/../photoweb" />
+      <root url="file://$PROJECT_DIR$/../../../Workspace/src/golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../Workspace/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../../../Workspace/src/zonst" />
+      <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
