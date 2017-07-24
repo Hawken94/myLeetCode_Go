@@ -1,34 +1,30 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;myLeetCode&gt;">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../AlgorithmDemos" />
-      <root url="file://$PROJECT_DIR$/../lib" />
-      <root url="file://$PROJECT_DIR$/../golang.org" />
-      <root url="file://$PROJECT_DIR$/../awesomeProject" />
-      <root url="file://$PROJECT_DIR$/../yongxiumjsrv" />
-      <root url="file://$PROJECT_DIR$/../libmahjong-1.0" />
-      <root url="file://$PROJECT_DIR$/../douyudemo" />
-      <root url="file://$PROJECT_DIR$/../photoweb" />
-      <root url="file://$PROJECT_DIR$/../../../Workspace/src/golang.org" />
-      <root url="file://$PROJECT_DIR$/../../../Workspace/src/github.com" />
-      <root url="file://$PROJECT_DIR$/../../../Workspace/src/zonst" />
+      <root url="file://$PROJECT_DIR$/../jubao56" />
+      <root url="file://$PROJECT_DIR$/../../../jubao/src/vision" />
+      <root url="file://$PROJECT_DIR$/../../../jubao/src/jubao" />
+      <root url="file://$PROJECT_DIR$/../../../jubao/src/platform" />
       <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../first" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
       <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../google.golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../jubao/src/.idea" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
     </CLASSES>
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/../AlgorithmDemos" />
-      <root url="file://$PROJECT_DIR$/../lib" />
-      <root url="file://$PROJECT_DIR$/../golang.org" />
-      <root url="file://$PROJECT_DIR$/../awesomeProject" />
-      <root url="file://$PROJECT_DIR$/../yongxiumjsrv" />
-      <root url="file://$PROJECT_DIR$/../libmahjong-1.0" />
-      <root url="file://$PROJECT_DIR$/../douyudemo" />
-      <root url="file://$PROJECT_DIR$/../photoweb" />
-      <root url="file://$PROJECT_DIR$/../../../Workspace/src/golang.org" />
-      <root url="file://$PROJECT_DIR$/../../../Workspace/src/github.com" />
-      <root url="file://$PROJECT_DIR$/../../../Workspace/src/zonst" />
+      <root url="file://$PROJECT_DIR$/../jubao56" />
+      <root url="file://$PROJECT_DIR$/../../../jubao/src/vision" />
+      <root url="file://$PROJECT_DIR$/../../../jubao/src/jubao" />
+      <root url="file://$PROJECT_DIR$/../../../jubao/src/platform" />
       <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../first" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
       <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../google.golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../jubao/src/.idea" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />
