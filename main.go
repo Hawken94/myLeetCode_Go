@@ -33,10 +33,17 @@ func main() {
 	fmt.Println(test)*/
 
 	//temp node
-	var head = temp.Node{1, nil}
-	n1 := temp.Node{2, &head}
-	n2 := temp.Node{3, &n1}
-	n2.Next = nil
+	//初始化一个头结点
+
+	//中午再写  !!!
+	var head temp.Node
+	var n1 temp.Node
+	var n2 temp.Node
+	head.Val = 1
+	n1.Val = 2
+	n2.Val = 3
+	*head.Next = *n1.Next
+	*n1.Next = *n2.Next
 
 	res := head
 
