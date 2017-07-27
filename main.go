@@ -5,7 +5,8 @@ import (
 
 	//"myLeetCode_Go/firstweek"
 	//"time"
-	"myLeetCode_Go/temp"
+	"myLeetCode_Go/firstweek"
+	//"myLeetCode_Go/temp"
 )
 
 func main() {
@@ -35,20 +36,33 @@ func main() {
 	//temp node
 	//初始化一个头结点
 
-	//中午再写  !!!
-	var head temp.Node
-	var n1 temp.Node
-	var n2 temp.Node
-	head.Val = 1
-	n1.Val = 2
-	n2.Val = 3
-	*head.Next = *n1.Next
-	*n1.Next = *n2.Next
+	//失败了 尽量不要用go来写链表，用c++更好
+	var head firstweek.ListNode
+	var n1 firstweek.ListNode
+	var n2 firstweek.ListNode
+	head.Val = 6
+	n1.Val = 4
+	n2.Val = 7
+	head.Next = &n1
+	n1.Next = &n2
+	n2.Next = nil
 
-	res := head
+	var head2 firstweek.ListNode
+	var m1 firstweek.ListNode
+	var m2 firstweek.ListNode
+	head2.Val = 5
+	m1.Val = 6
+	m2.Val = 8
+	head2.Next = &m1
+	m1.Next = &m2
+	m2.Next = nil
 
-	for res.Next != nil {
+	res := firstweek.AddTwoNumbers(&head, &head2)
+
+	fmt.Println(res == nil)
+	for res != nil {
 		fmt.Println(res.Val)
-		res = *res.Next
+		res = res.Next
 	}
+
 }

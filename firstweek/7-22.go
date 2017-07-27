@@ -15,6 +15,45 @@ type ListNode struct {
 	Next *ListNode
 }
 
-// func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	var dummyHead ListNode
 
-// }
+	p, q, curr := l1, l2, dummyHead
+
+	carry := 0
+
+	for p != nil || q != nil {
+		var x, y int
+		if p != nil {
+			x = p.Val
+		} else {
+			x = 0
+		}
+		if q != nil {
+			y = q.Val
+		} else {
+			y = 0
+		}
+
+		sum := carry + x + y
+		carry = sum / 10
+
+		var newNode ListNode
+		newNode.Val = sum % 10
+		curr.Next = &newNode
+
+		curr.Next = &curr
+		if p != nil {
+			p = p.Next
+		}
+		if q != nil {
+			q = q.Next
+		}
+	}
+	if carry > 0 {
+		var newNode ListNode
+		newNode.Val = carry
+		curr.Next = &newNode
+	}
+	return dummyHead.Next
+}
