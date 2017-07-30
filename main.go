@@ -34,8 +34,7 @@ func main() {
 	test := [][]int{{1, 1, 1}, {2, 2, 2}}
 	fmt.Println(test)*/
 
-	//temp node
-	//初始化一个头结点
+	//Add Two Numbers
 
 	//失败了 尽量不要用go来写链表，用c++更好
 	/* 	var head firstweek.ListNode
@@ -70,4 +69,10 @@ func main() {
 	//Longest Substring Without Repeating Characters
 	str := "pwwkew"
 	fmt.Println(secondweek.LengthOfLongestSubstrings(str))
+
+	//Median of Two Sorted Arrays
+	var num1 = []int{1, 4}
+	var num2 = []int{2, 3, 4}
+	res := secondweek.FindMedianSortedArrays(num1, num2)
+	fmt.Println(res)
 }
