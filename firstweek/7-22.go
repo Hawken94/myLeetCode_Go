@@ -9,15 +9,17 @@
 
 package firstweek
 
+import "fmt"
+
 // ListNode Definition for singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
+// AddTwoNumbers 不懂啊 todo
 func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var dummyHead ListNode
-
 	p, q, curr := l1, l2, dummyHead
 
 	carry := 0
@@ -42,7 +44,8 @@ func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		newNode.Val = sum % 10
 		curr.Next = &newNode
 
-		curr.Next = &curr
+		fmt.Println(curr.Val)
+		curr = *curr.Next
 		if p != nil {
 			p = p.Next
 		}
@@ -55,5 +58,6 @@ func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		newNode.Val = carry
 		curr.Next = &newNode
 	}
+	fmt.Println(curr.Next)
 	return dummyHead.Next
 }
