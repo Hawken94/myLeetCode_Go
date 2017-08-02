@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"myLeetCode_Go/secondweek"
+	"myLeetCode_Go/thirdweek"
 )
 
 //"myLeetCode_Go/firstweek"
@@ -75,4 +76,7 @@ func main() {
 	var num2 = []int{2, 3, 4}
 	res := secondweek.FindMedianSortedArrays(num1, num2)
 	fmt.Println(res)
+
+	// Longest Palindromic Substring
+	fmt.Println(thirdweek.LongestPalindrome("caad"))
 }
