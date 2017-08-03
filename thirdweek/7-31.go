@@ -40,4 +40,18 @@ func expandAroundCenter(s string, left, right int) int {
 	return R - L - 1
 }
 
-// 马拉车算法解题
+// Manacher 马拉车算法解题
+func Manacher(s string) string {
+	var ss []byte
+	ss[0], ss[1] = '$', '#'
+	j := 2
+	for i := 0; i < len(s); i++ {
+		ss[j] = s[i]
+		j++
+		ss[j] = '#'
+		j++
+	}
+	ss[j] = '^'
+	v
+	// lenss: = len(ss)
+}
