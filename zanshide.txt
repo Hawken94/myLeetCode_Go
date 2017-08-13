@@ -1,0 +1,30 @@
+/* package myLeetCode_Go
+
+import (
+	"fmt"
+	"os"
+)
+
+//思路：先获得相同字母的种类的个数，如果有3个及以上不同的，返回0;2个返回2;1个返回1；
+func main() {
+	input := os.Args
+	// temp := bytes(str)
+
+	str := input[1]
+	strMap := make(map[int]byte)
+	for i := range str {
+		strMap[i] = str[i]
+	}
+	count := 1
+	temp := strMap[0]
+	temp2 := temp
+	for i := 1; i < len(strMap); i++ {
+		if temp != strMap[i] && temp2 != strMap[i] {
+			temp2 = strMap[i]
+			count++
+		}
+	}
+
+	fmt.Println(count)
+}
+ */
