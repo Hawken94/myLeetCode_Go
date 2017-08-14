@@ -77,7 +77,7 @@ func main() {
 	res := secondweek.FindMedianSortedArrays(num1, num2)
 	fmt.Println(res)
 	*/
-	// Longest Palindromic Substring test
+	// Longest Palindromic Substring
 	fmt.Println(thirdweek.LongestPalindrome("caad"))
 
 	// Reverse Integer
