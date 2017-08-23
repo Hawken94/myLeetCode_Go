@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"myLeetCode_Go/forthweek"
+	"myLeetCode_Go/sixthweek"
 	"myLeetCode_Go/thirdweek"
 )
 
@@ -89,4 +90,7 @@ func main() {
 
 	// Palindrome Number
 	fmt.Println(forthweek.IsPalindrome(123))
+
+	// ZigZag Conversion
+	fmt.Println(sixthweek.Convert("PAYPALISHIRING", 3))
 }
