@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+	"os"
+)
+//本地调试通过
+//思路：先获得相同字母的种类的个数，如果有3个及以上不同的，返回0;2个返回2;1个返回1；
+func main() {
+	input := os.Args
+
+	str := input[1]	//通过命令行获取参数的索引为1，不是0
+	strMap := make(map[int]byte)	//使用map存储，时间复杂度为O(n)
+	for i := range str {
+		strMap[i] = str[i]
+	}
+	count := 1	//第一个值是一种颜色，所以起始为1
+	temp := strMap[0]
+	temp2 := temp
+	for i := 1; i < len(strMap); i++ {
+        // 防止重复判断
+		if temp != strMap[i] && temp2 != strMap[i] {
+			temp2 = strMap[i]
+			count++
+		}
+	}
+
+	fmt.Println(count)
+}

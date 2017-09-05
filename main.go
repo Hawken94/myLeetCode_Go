@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"myLeetCode_Go/secondweek"
+	"myLeetCode_Go/forthweek"
+	"myLeetCode_Go/sixthweek"
 	"myLeetCode_Go/thirdweek"
 )
 
@@ -68,7 +69,7 @@ func main() {
 	*/
 
 	//Longest Substring Without Repeating Characters
-	str := "pwwkew"
+	/* str := "pwwkew"
 	fmt.Println(secondweek.LengthOfLongestSubstrings(str))
 
 	//Median of Two Sorted Arrays
@@ -76,8 +77,20 @@ func main() {
 	var num2 = []int{2, 3, 4}
 	res := secondweek.FindMedianSortedArrays(num1, num2)
 	fmt.Println(res)
-
+	*/
 	// Longest Palindromic Substring
 	fmt.Println(thirdweek.LongestPalindrome("caad"))
-	// test
+
+	// Reverse Integer
+	fmt.Println(forthweek.ReverseWithOverflow(2147483647))
+
+	// String to Integer (atoi)
+	fmt.Println(forthweek.MyAtoi("9223372036854775809"))
+	// fmt.Println(forthweek.IsNum(' '))
+
+	// Palindrome Number
+	fmt.Println(forthweek.IsPalindrome(123))
+
+	// ZigZag Conversion
+	fmt.Println(sixthweek.Convert("PAYPALISHIRING", 3))
 }
