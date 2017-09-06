@@ -97,5 +97,5 @@ func main() {
 	// Container With Most Water
 	height := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
 	fmt.Println(sixthweek.MaxArea(height))
-	// test
+
 }
