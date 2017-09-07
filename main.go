@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"myLeetCode_Go/eighthweek"
 	"myLeetCode_Go/forthweek"
 	"myLeetCode_Go/sixthweek"
 	"myLeetCode_Go/thirdweek"
@@ -98,4 +99,9 @@ func main() {
 	height := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
 	fmt.Println(sixthweek.MaxArea(height))
 
+	// Integer to Roman
+	fmt.Println(eighthweek.IntToRoman2(1996))
+
+	// Roman to Integer
+	fmt.Println(eighthweek.RomanToInt("MCMXCVI"))
 }
