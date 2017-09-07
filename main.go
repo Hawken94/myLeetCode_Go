@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"myLeetCode_Go/eighthweek"
+	"myLeetCode_Go/firstweek"
 	"myLeetCode_Go/forthweek"
 	"myLeetCode_Go/sixthweek"
 	"myLeetCode_Go/thirdweek"
@@ -30,12 +31,11 @@ func main() {
 		fmt.Println(end - start)*/
 
 	//3Sum
-	/*var num = firstweek.IntSlice{-1, -1, -1, 0, 2, 1, -2, 2, 4, 4}
-	//var res [][]int
+	var num = firstweek.IntSlice{-1, -1, -1, 0, 2, 1, -2, 2, 4, 4}
 	fmt.Println(firstweek.ThreeSum(num))
-
-	test := [][]int{{1, 1, 1}, {2, 2, 2}}
-	fmt.Println(test)*/
+	nums := []int{-1, -1, -1, 0, 2, 1, -2, 2, 4, 4}
+	firstweek.QuickSort(nums, 0, len(nums)-1)
+	fmt.Println(nums)
 
 	//Add Two Numbers
 
@@ -55,7 +55,7 @@ func main() {
 	   	var m2 firstweek.ListNode
 	   	head2.Val = 5
 	   	m1.Val = 6
-	   	m2.Val = 8
+	   	m2.Val = 85
 	   	head2.Next = &m1
 	   	m1.Next = &m2
 	   	m2.Next = nil
@@ -104,4 +104,9 @@ func main() {
 
 	// Roman to Integer
 	fmt.Println(eighthweek.RomanToInt("MCMXCVI"))
+
+	// Longest Common Prefix
+	strs := []string{"aa", "aa"}
+	fmt.Println(eighthweek.LongestCommonPrefix(strs))
+	// fmt.Println("xhk"[0:1])
 }

@@ -12,11 +12,6 @@
 
 package firstweek
 
-import (
-	"fmt"
-	"sort"
-)
-
 type IntSlice []int
 
 func (c IntSlice) Len() int {
@@ -31,9 +26,23 @@ func (c IntSlice) Swap(i, j int) {
 	c[i], c[j] = c[j], c[i]
 }
 
+// ThreeSum 很奇怪，leetcode编译不了，明天先看快速排序算法了
 func ThreeSum(nums IntSlice) [][]int {
-	sort.Sort(nums) //对数组进行排序
+	// sort.Sort(nums) //对数组进行排序
+	QuickSort(nums, 0, len(nums)-1)
 	//  {-1, -1,-1， 0, 2, 1,2，4，4}
+	temp1 := make([]int, 0)
+
+	for i := 0; i < len(nums); i++ {
+		min := nums[i]
+
+		for j := i + 1; j < len(nums); j++ {
+			if min >= nums[j] {
+				min = nums[j]
+			}
+		}
+		temp1 = append(temp1, min)
+	}
 
 	var res [][]int
 	var temp []int
@@ -47,7 +56,7 @@ func ThreeSum(nums IntSlice) [][]int {
 			for j < k {
 				if nums[j]+nums[k] == sum {
 					temp = append(temp, nums[i], nums[j], nums[k])
-					fmt.Println(temp)
+					// fmt.Println(temp)
 					//temp 最后会变成一个很长的一维数组，不能直接append
 					//res = append(res, {nums[i], nums[j], nums[k]})
 
@@ -75,4 +84,45 @@ func ThreeSum(nums IntSlice) [][]int {
 	}
 
 	return res
+}
+
+// QuickSort 快速排序算法
+func QuickSort(values []int, left, right int) {
+
+	temp := values[left]
+
+	p := left
+
+	i, j := left, right
+
+	for i <= j {
+
+		for j >= p && values[j] >= temp {
+			j--
+		}
+
+		if j >= p {
+			values[p] = values[j]
+			p = j
+		}
+
+		if values[i] <= temp && i <= p {
+			i++
+		}
+
+		if i <= p {
+			values[p] = values[i]
+			p = i
+		}
+	}
+
+	values[p] = temp
+
+	if p-left > 1 {
+		QuickSort(values, left, p-1)
+	}
+
+	if right-p > 1 {
+		QuickSort(values, p+1, right)
+	}
 }
