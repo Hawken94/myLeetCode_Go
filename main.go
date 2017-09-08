@@ -33,7 +33,7 @@ func main() {
 	//3Sum
 	var num = firstweek.IntSlice{-1, -1, -1, 0, 2, 1, -2, 2, 4, 4}
 	fmt.Println(firstweek.ThreeSum(num))
-	nums := []int{-1, -1, -1, 0, 2, 1, -2, 2, 4, 4}
+	nums := []int{3, 1, 4, 2}
 	firstweek.QuickSort(nums, 0, len(nums)-1)
 	fmt.Println(nums)
 

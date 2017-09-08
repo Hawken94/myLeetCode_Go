@@ -126,3 +126,27 @@ func QuickSort(values []int, left, right int) {
 		QuickSort(values, p+1, right)
 	}
 }
+
+func QuickSort2(values []int, left, right int) {
+	l, r, temp := left, right, values[left]
+	for l < r {
+		for l < r && values[r] > temp {
+			r--
+		}
+		if l < r {
+			values[l] = values[r]
+			l++
+		}
+		for l < r && values[l] < temp {
+			l++
+		}
+		// 可能已经结束了，赋值时候需要移位
+		if l < r {
+			values[r] = values[l]
+			r--
+		}
+	}
+	values[l] = temp
+	QuickSort2(values, left, l-1)
+	QuickSort2(values, l+1, right)
+}
