@@ -5,6 +5,7 @@ import (
 	"myLeetCode_Go/eighthweek"
 	"myLeetCode_Go/firstweek"
 	"myLeetCode_Go/forthweek"
+	"myLeetCode_Go/quicksort"
 	"myLeetCode_Go/sixthweek"
 	"myLeetCode_Go/thirdweek"
 )
@@ -34,7 +35,7 @@ func main() {
 	var num = firstweek.IntSlice{-1, -1, -1, 0, 2, 1, -2, 2, 4, 4}
 	fmt.Println(firstweek.ThreeSum(num))
 	nums := []int{3, 1, 4, 2}
-	firstweek.QuickSort(nums, 0, len(nums)-1)
+	quicksort.QuickSort(nums, 0, len(nums)-1)
 	fmt.Println(nums)
 
 	//Add Two Numbers
@@ -109,4 +110,9 @@ func main() {
 	strs := []string{"aa", "aa"}
 	fmt.Println(eighthweek.LongestCommonPrefix(strs))
 	// fmt.Println("xhk"[0:1])
+
+	// ThreeSumClosest 3Sum Closest
+	nums = []int{1, 1, 1, 0}
+	target := 100
+	fmt.Println(eighthweek.ThreeSumClosest(nums, target))
 }
