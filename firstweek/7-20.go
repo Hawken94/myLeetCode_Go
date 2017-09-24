@@ -1,5 +1,9 @@
 package firstweek
 
+import (
+	"fmt"
+)
+
 // Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
@@ -42,13 +46,14 @@ func TwoSumByMap(nums []int, target int) []int {
 
 	tempMap := make(map[int]int)
 	for i := 0; i < len(nums); i++ {
+		fmt.Println("xhk:", tempMap[target-nums[i]])
 		if _, ok := tempMap[target-nums[i]]; ok {
-			result[1] = i
+			result[1] = i // 存储的顺序倒过来了 精妙
 			result[0] = tempMap[target-nums[i]]
 			// result = append(result, result[1], result[0])   返回多个结果
 			return result //只能返回一个结果
 		}
-		tempMap[nums[i]] = i
+		tempMap[nums[i]] = i // 把切片里面的值和索引对应
 	}
 	return result
 }
