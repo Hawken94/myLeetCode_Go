@@ -112,7 +112,7 @@ func main() {
 	fmt.Println(eighthweek.LongestCommonPrefix(strs))
 	// fmt.Println("xhk"[0:1])
 
-	// ThreeSumClosest 3Sum Closest
+	// 3Sum Closest
 	nums = []int{1, 1, 1, 0}
 	target1 := 100
 	fmt.Println(eighthweek.ThreeSumClosest(nums, target1))
