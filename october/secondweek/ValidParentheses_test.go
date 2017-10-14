@@ -1,4 +1,4 @@
-package october
+package secondweek
 
 import (
 	"reflect"
@@ -7,7 +7,7 @@ import (
 
 func TestValidParentheses(t *testing.T) {
 	s := "(){}[]"
-	if !reflect.DeepEqual(IsValid(s), 0) {
+	if !reflect.DeepEqual(IsValid(s), true) {
 		t.Errorf("测试失败！ %v", IsValid(s))
 	}
 }

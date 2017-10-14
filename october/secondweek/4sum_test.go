@@ -1,4 +1,4 @@
-package october
+package secondweek
 
 import (
 	"reflect"

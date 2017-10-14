@@ -1,4 +1,6 @@
-package october
+package secondweek
+
+
 
 import (
 	"fmt"
