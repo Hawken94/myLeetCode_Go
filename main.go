@@ -5,9 +5,11 @@ import (
 	"myLeetCode_Go/eighthweek"
 	"myLeetCode_Go/firstweek"
 	"myLeetCode_Go/forthweek"
+	"myLeetCode_Go/october/secondweek"
 	"myLeetCode_Go/quicksort"
 	"myLeetCode_Go/sixthweek"
 	"myLeetCode_Go/thirdweek"
+	"sort"
 	"time"
 )
 
@@ -116,4 +118,15 @@ func main() {
 	nums = []int{1, 1, 1, 0}
 	target1 := 100
 	fmt.Println(eighthweek.ThreeSumClosest(nums, target1))
+
+	//
+	num1 := sort.IntSlice{-1, 0, 1, 2, -1, -4}
+	fmt.Println(secondweek.FourSum(num1, -1))
+
+	s := "(){}"
+	// b := []byte(s)
+	for _, c := range s {
+		fmt.Println("xhk", c == '(')
+	}
+
 }
