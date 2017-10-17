@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"myLeetCode_Go/eighthweek"
-	"myLeetCode_Go/firstweek"
-	"myLeetCode_Go/forthweek"
-	"myLeetCode_Go/october/secondweek"
-	"myLeetCode_Go/quicksort"
-	"myLeetCode_Go/sixthweek"
-	"myLeetCode_Go/thirdweek"
+	"myLeetCode_Go/august/augForthweek"
+	"myLeetCode_Go/august/augSixthweek"
+	"myLeetCode_Go/constant/quicksort"
+	"myLeetCode_Go/july/julFirstweek"
+	"myLeetCode_Go/july/julThirdweek"
+	"myLeetCode_Go/october/octSecondweek"
+	"myLeetCode_Go/october/octThirdweek"
+	"myLeetCode_Go/september/sepEighthweek"
 	"sort"
 	"time"
 )
@@ -27,7 +28,7 @@ func main() {
 	// var nums = []int{2}
 
 	target := 9
-	fmt.Println(firstweek.TwoSumByMap(nums, target))
+	fmt.Println(julFirstweek.TwoSumByMap(nums, target))
 	end := time.Now().UnixNano()
 
 	fmt.Println(end)
@@ -35,8 +36,8 @@ func main() {
 	fmt.Println(end - start)
 
 	//3Sum
-	var num = firstweek.IntSlice{-1, -1, -1, 0, 2, 1, -2, 2, 4, 4}
-	fmt.Println(firstweek.ThreeSum(num))
+	var num = julFirstweek.IntSlice{-1, -1, -1, 0, 2, 1, -2, 2, 4, 4}
+	fmt.Println(julFirstweek.ThreeSum(num))
 	nums1 := []int{3, 1, 4, 2}
 	quicksort.QuickSort(nums, 0, len(nums1)-1)
 	fmt.Println(nums)
@@ -84,44 +85,44 @@ func main() {
 	fmt.Println(res)
 	*/
 	// Longest Palindromic Substring
-	fmt.Println(thirdweek.LongestPalindrome("caad"))
+	fmt.Println(julThirdweek.LongestPalindrome("caad"))
 
 	// Reverse Integer
-	fmt.Println(forthweek.ReverseWithOverflow(2147483647))
+	fmt.Println(augForthweek.ReverseWithOverflow(2147483647))
 
 	// String to Integer (atoi)
-	fmt.Println(forthweek.MyAtoi("9223372036854775809"))
+	fmt.Println(augForthweek.MyAtoi("9223372036854775809"))
 	// fmt.Println(forthweek.IsNum(' '))
 
 	// Palindrome Number
-	fmt.Println(forthweek.IsPalindrome(123))
+	fmt.Println(augForthweek.IsPalindrome(123))
 
 	// ZigZag Conversion
-	fmt.Println(sixthweek.Convert("PAYPALISHIRING", 3))
+	fmt.Println(augSixthweek.Convert("PAYPALISHIRING", 3))
 
 	// Container With Most Water
 	height := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	fmt.Println(sixthweek.MaxArea(height))
+	fmt.Println(augSixthweek.MaxArea(height))
 
 	// Integer to Roman
-	fmt.Println(eighthweek.IntToRoman2(1996))
+	fmt.Println(sepEighthweek.IntToRoman2(1996))
 
 	// Roman to Integer
-	fmt.Println(eighthweek.RomanToInt("MCMXCVI"))
+	fmt.Println(sepEighthweek.RomanToInt("MCMXCVI"))
 
 	// Longest Common Prefix
 	strs := []string{"aa", "aa"}
-	fmt.Println(eighthweek.LongestCommonPrefix(strs))
+	fmt.Println(sepEighthweek.LongestCommonPrefix(strs))
 	// fmt.Println("xhk"[0:1])
 
 	// 3Sum Closest
 	nums = []int{1, 1, 1, 0}
 	target1 := 100
-	fmt.Println(eighthweek.ThreeSumClosest(nums, target1))
+	fmt.Println(sepEighthweek.ThreeSumClosest(nums, target1))
 
 	//
 	num1 := sort.IntSlice{-1, 0, 1, 2, -1, -4}
-	fmt.Println(secondweek.FourSum(num1, -1))
+	fmt.Println(octSecondweek.FourSum(num1, -1))
 
 	s := "(){}"
 	// b := []byte(s)
@@ -129,4 +130,6 @@ func main() {
 		fmt.Println("xhk", c == '(')
 	}
 
+	fmt.Println(octThirdweek.GenerateParentheses(3))
+	fmt.Println("xhk" + "xhk")
 }
