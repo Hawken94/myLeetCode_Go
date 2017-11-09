@@ -41,9 +41,9 @@ func MergeTwoLisByRecursive(l1 *ListNode, l2 *ListNode) *ListNode {
 		tmp := l2
 		tmp.Next = MergeTwoLisByRecursive(l1, l2.Next)
 		return tmp
-	} else {
-		tmp := l1
-		tmp.Next = MergeTwoLisByRecursive(l1.Next, l2)
-		return tmp
 	}
+	tmp := l1
+	tmp.Next = MergeTwoLisByRecursive(l1.Next, l2)
+	return tmp
+
 }
