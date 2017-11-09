@@ -7,7 +7,7 @@ package sepEighthweek
 import (
 	"fmt"
 	"math"
-	"myLeetCode_Go/constant/quicksort"
+	"myLeetCode_Go/utils/quicksort"
 )
 
 // ThreeSumClosest 3Sum Closest

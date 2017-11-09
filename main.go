@@ -4,12 +4,13 @@ import (
 	"fmt"
 	"myLeetCode_Go/august/augForthweek"
 	"myLeetCode_Go/august/augSixthweek"
-	"myLeetCode_Go/constant/quicksort"
 	"myLeetCode_Go/july/julFirstweek"
 	"myLeetCode_Go/july/julThirdweek"
 	"myLeetCode_Go/october/octSecondweek"
 	"myLeetCode_Go/october/octThirdweek"
 	"myLeetCode_Go/september/sepEighthweek"
+	"myLeetCode_Go/utils/node"
+	"myLeetCode_Go/utils/quicksort"
 	"sort"
 	"time"
 )
@@ -132,4 +133,8 @@ func main() {
 
 	fmt.Println(octThirdweek.GenerateParentheses(3))
 	fmt.Println("xhk" + "xhk")
+
+	// test listnode
+	list := node.GenerateListNode([]int{1, 2, 3, 4, 5})
+	fmt.Println(list)
 }

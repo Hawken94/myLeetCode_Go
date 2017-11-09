@@ -12,7 +12,7 @@
 
 package julFirstweek
 
-import "myLeetCode_Go/constant/quicksort"
+import "myLeetCode_Go/utils/quicksort"
 
 type IntSlice []int
 

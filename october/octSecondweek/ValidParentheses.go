@@ -1,10 +1,8 @@
 package octSecondweek
 
-
-
 import (
 	"fmt"
-	"myLeetCode_Go/constant/stack"
+	"myLeetCode_Go/utils/stack"
 )
 
 // IsValid Valid Parentheses
