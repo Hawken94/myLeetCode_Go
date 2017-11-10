@@ -1,6 +1,14 @@
-package secondweek
+package novSecondweek
 
-// [1,3,5,7,9]  2
+// date:2017-11-09
+
+// SearchInsert
+// 题目：给定一个排序数组，返回目标值的所在位置；如果没找到，则返回它在该数组应该所处的位置。假设没有重复值
+// Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+// You may assume no duplicates in the array.
+// [1,3,5,7,9]  2 → 1
+
+// 类似SearchForRange,二分查找，根据题目不需要找到与target相等的第一个值
 func searchInsert(nums []int, target int) int {
 	if nums[0] > target {
 		return 0
@@ -37,6 +45,7 @@ func searchFirst(nums []int, target int) int {
 	return low
 }
 
+// 已经排除了重复值
 func searchInsert2(nums []int, target int) int {
 	low, high := 0, len(nums)-1
 

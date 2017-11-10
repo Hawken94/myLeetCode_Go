@@ -1,4 +1,10 @@
-package secondweek
+package novSecondweek
+
+// date:2017-11-08
+
+// Merge k Sorted Lists
+// 题目：把k个已排序好的链表合并成一个，分析它的复杂度
+// Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
 // ListNode 链表定义
 type ListNode struct {
@@ -6,6 +12,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// 二分查找，其余步骤类似MergeTwoLists
 func mergeKLists(lists []*ListNode) *ListNode {
 	return partion(lists, 0, len(lists)-1)
 }

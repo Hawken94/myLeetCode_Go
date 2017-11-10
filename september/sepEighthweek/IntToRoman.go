@@ -1,11 +1,13 @@
 package sepEighthweek
 
+// date:2017-09-06
+
+// Integer to Roman
 // Given an integer, convert it to a roman numeral.
 // Input is guaranteed to be within the range from 1 to 3999
 // 给定一个整数,将其转换为罗马数字,输入保证在1到3999之间.
 
-// IntToRoman Integer to Roman
-// 思路: 建立两个数组将罗马数字和整数对应起来(其实也可以用map); 去数组里找不超过它的最大的数
+// IntToRoman 思路: 建立两个数组将罗马数字和整数对应起来(其实也可以用map); 去数组里找不超过它的最大的数
 func IntToRoman(num int) string {
 	values := []int{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1}
 	strs := []string{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"}

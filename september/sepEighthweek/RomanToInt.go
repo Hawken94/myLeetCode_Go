@@ -1,11 +1,13 @@
 package sepEighthweek
 
+// date:2017-09-06
+
+// Roman to Integer
 //Given a roman numeral, convert it to an integer.
 //Input is guaranteed to be within the range from 1 to 3999.
 // 给定一个罗马数字,将其转换为整数,输入保证在1到3999之间.
 
-// RomanToInt Roman to Integer
-// 思路:建立一个map,将罗马数字及对应的值映射到map中; 从末端开始遍历, 遇到CM则 M-C, 否则加法
+// RomanToInt 思路:建立一个map,将罗马数字及对应的值映射到map中; 从末端开始遍历, 遇到CM则 M-C, 否则加法
 func RomanToInt(s string) int {
 	if len(s) == 0 {
 		return 0

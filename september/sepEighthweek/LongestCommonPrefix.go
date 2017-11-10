@@ -1,6 +1,10 @@
 package sepEighthweek
 
-// LongestCommonPrefix Longest Common Prefix
+// date:2017-09-07
+
+//  Longest Common Prefix
+
+// LongestCommonPrefix 最长公共前缀
 func LongestCommonPrefix(strs []string) string {
 	if len(strs) == 0 {
 		return ""
