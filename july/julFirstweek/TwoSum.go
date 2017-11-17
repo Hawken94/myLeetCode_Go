@@ -4,10 +4,12 @@ import (
 	"fmt"
 )
 
+// date:2017-07-20
+
+// Two Sum
+// 题目: 给定一个整数数组，返回两个数字的索引，使它们相加到一个特定的目标。 假设每个输入都只有一个解决方案，相同的元素只能使用一次
 // Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
-
-//  给定一个整数数组，返回两个数字的索引，使它们相加到一个特定的目标。 假设每个输入都只有一个解决方案，相同的元素只能使用一次
 
 // Example:
 // Given nums = [2, 7, 11, 15], target = 9,

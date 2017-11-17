@@ -3,8 +3,10 @@ package sepEighthweek
 // date:2017-09-07
 
 //  Longest Common Prefix
+// 题目 编写一个函数来查找字符串数组中最长的公共前缀字符串
+// Write a function to find the longest common prefix string amongst an array of strings
 
-// LongestCommonPrefix 最长公共前缀
+// LongestCommonPrefix todo 思路:
 func LongestCommonPrefix(strs []string) string {
 	if len(strs) == 0 {
 		return ""

@@ -1,5 +1,12 @@
 package octThirdweek
 
+// date:unknown
+
+// Merge Two Sorted Lists
+// 题目:合并两个已排序的链接列表并将其作为新列表返回。新列表应通过将前两个列表的节点拼接在一起来完成
+// Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the
+// nodes of the first two lists
+
 // ListNode 链表定义
 type ListNode struct {
 	Val  int

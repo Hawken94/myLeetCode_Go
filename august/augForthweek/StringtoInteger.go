@@ -1,5 +1,9 @@
 package augForthweek
 
+// date:2017-08-13
+
+// String to Integer (atoi)
+// 题目:实现string转换成数字的方法
 // Implement atoi to convert a string to an integer.
 // 注意：考虑特殊情况，比如：
 //1.该函数首先丢弃尽可能多的空格字符，直到找到第一个非空格字符。 然后，从该字符开始，选择一个可选的初始加号或减号，后跟尽可能多的数字，并将其解释为数值

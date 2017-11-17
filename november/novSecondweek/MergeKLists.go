@@ -43,5 +43,4 @@ func merge(l1, l2 *ListNode) *ListNode {
 	}
 	l2.Next = merge(l1, l2.Next)
 	return l2
-
 }

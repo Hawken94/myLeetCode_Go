@@ -1,8 +1,10 @@
 package augForthweek
 
+// date:2017-08-10
+
 // Reverse Integer
+// 题目: 翻转数字，注意：要考虑溢出情况 （go语言感觉不要考虑溢出）
 // Reverse digits of an integer.
-// 翻转数字，注意：要考虑溢出情况 （go语言感觉不要考虑溢出）
 // Example1: x = 123, return 321
 // Example2: x = -123, return -321
 

@@ -5,8 +5,17 @@ import (
 	"sort"
 )
 
-// FourSum based on 3Sum
-// 思路:基于3Sum的想法,排序后先判断前四个,再判断第一个和最后三个;接着是在循环里面判断前三个和最后一个的和与target的比较
+// date: unknown
+
+// 4Sum
+// 题目:给定一个n个整数的数组S，是否存在S中的元素a，b，c和d，使得a + b + c + d = target？在数组中找出所有唯一的四元组，给出目标的总集合
+// 注意：解决方案不能包含重复的四元组
+// Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all
+// unique quadruplets in the array which gives the sum of target.
+// Note: The solution set must not contain duplicate quadruplets
+
+// FourSum based on 3Sum  思路:基于3Sum的想法,排序后先判断前四个,再判断第一个和最后三个;接着是在循环里面判断前三个和最后一个的和
+// 与target的比较
 func FourSum(num sort.IntSlice, target int) [][]int {
 	var ans [][]int
 	length := len(num)

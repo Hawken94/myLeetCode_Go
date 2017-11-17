@@ -2,8 +2,11 @@ package julSecondweek
 
 import "math"
 
+// date:2017-07-30
+
+// Longest Substring Without Repeating Characters
+// 题目: 给定一个字符串，找到不重复字符的最长子串的长度。
 // Given a string, find the length of the longest substring without repeating characters.
-// 给定一个字符串，找到不重复字符的最长子串的长度。
 
 /* Examples:
 Given "abcabcbb", the answer is "abc", which the length is 3.

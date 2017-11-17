@@ -1,9 +1,11 @@
 package julSecondweek
 
-// 7.30写了多道题目
-/* There are two sorted arrays nums1 and nums2 of size m and n respectively.
-Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)). */
-// 有两个已经排序好的数组nums1和nums2分别为m和n大小。找到这两个排序数组的中位数。整体运行时间复杂度应为O（log（m + n））
+// date:2017-07-30
+
+// Median of Two Sorted Arrays
+// 题目:有两个已经排序好的数组nums1和nums2分别为m和n大小。找到这两个排序数组的中位数。整体运行时间复杂度应为O（log（m + n））
+// There are two sorted arrays nums1 and nums2 of size m and n respectively.
+// Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 /*
 Example 1:
 nums1 = [1, 3]
@@ -37,7 +39,7 @@ func (c IntSlice) Swap(i, j int) {
 }
 
 // FindMedianSortedArrays ...
-//todo 测试通过，但是时间复杂度应该不对
+//todo 测试通过，但是时间复杂度应该不对 todo 重新做一遍
 func FindMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	var tempArray = make(IntSlice, 0, 0)
 	for i := 0; i < len(nums1); i++ {

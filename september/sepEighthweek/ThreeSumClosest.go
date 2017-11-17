@@ -3,9 +3,9 @@ package sepEighthweek
 // date:2017-09-08
 
 // 3Sum Closest
+// 题目: 给定n个整数的数组S，在S中找到三个整数，使得和最接近给定的数目target。返回三个整数的总和。你可以假设每个输入都只有一个解决方案
 // Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.
 // Return the sum of the three integers. You may assume that each input would have exactly one solution
-// 给定n个整数的数组S，在S中找到三个整数，使得和最接近给定的数目target。返回三个整数的总和。你可以假设每个输入都只有一个解决方案
 
 import (
 	"fmt"
