@@ -36,7 +36,7 @@ func MergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	return fakehead.Next
 }
 
-// MergeTwoLisByRecursive 思路：使用递归;如果l1.Val > l2.Val,则l1继续与l2.Next比较,以此类推;反之,类似.
+// MergeTwoLisByRecursive 思路：使用递归;如果l1.Val > l2.Val,则l1继续与l2.Next比较,以此类推;反之,类似. 归并
 func MergeTwoLisByRecursive(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil {
 		return l2
