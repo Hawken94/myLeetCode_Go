@@ -38,9 +38,9 @@ func main() {
 
 	/*
 
-		slkdfjskdl
-		sldfkjsdlf
-		sdflksdjlf
+		slfjskdl
+		sldf
+		sdsdjlf
 	*/
 
 	//3Sum
