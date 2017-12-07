@@ -36,6 +36,13 @@ func main() {
 
 	fmt.Println(end - start)
 
+	/*
+
+		slkdfjskdl
+		sldfkjsdlf
+		sdflksdjlf
+	*/
+
 	//3Sum
 	var num = julFirstweek.IntSlice{-1, -1, -1, 0, 2, 1, -2, 2, 4, 4}
 	fmt.Println(julFirstweek.ThreeSum(num))
