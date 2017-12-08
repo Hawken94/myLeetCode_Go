@@ -1,6 +1,13 @@
 package decSecondweek
 
-// Time Limit Exceeded
+// date:2017-12-05
+
+// 题目：Divide Two Integers
+// 不用乘法，除法和mod运算符来计算两个整数的除法。 如果溢出，则返回MAX_INT。
+// Divide two integers without using multiplication, division and mod operator.
+// If it is overflow, return MAX_INT.
+
+// Time Limit Exceeded 思路:用被除数累加法来判断,但是如果除数太大会超时
 func divide(dividend, divisor int) int {
 	mutiple := 0
 	signCount := 0
@@ -13,15 +20,15 @@ func divide(dividend, divisor int) int {
 		divisor = -divisor
 	}
 
-	maxUint32 := 1<<31 - 1
+	maxInt32 := 1<<31 - 1
 	sum := divisor
 
 	for sum <= dividend {
 		mutiple++
 		sum += divisor
 	}
-	if mutiple > maxUint32 {
-		mutiple = maxUint32
+	if mutiple > maxInt32 {
+		mutiple = maxInt32
 	}
 	if signCount == 1 {
 		mutiple = -mutiple
@@ -29,6 +36,7 @@ func divide(dividend, divisor int) int {
 	return mutiple
 }
 
+// 使用递归,方法很巧妙,但是不太懂.
 func divideByRecursion(dividend, divisor int) int {
 	maxUint32 := 1<<31 - 1
 	mutiple := divideRecur(dividend, divisor)
@@ -56,6 +64,7 @@ func divideRecur(dividend, divisor int) int {
 
 	mutiple := 1
 	sum := divisor
+	// TODO: 巧妙之处,1,2,4,8...最后会dividend<divisor退出
 	for sum+sum <= dividend {
 		mutiple += mutiple
 		sum += sum
