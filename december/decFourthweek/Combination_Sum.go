@@ -19,7 +19,7 @@ The solution set must not contain duplicate combinations.
 For example, given candidate set [2, 3, 6, 7] and target 7,
 */
 
-// 思路:回溯法,虽然不是很懂.
+// 思路:回溯法,虽然不是很懂. TODO: 传说中的回溯法
 func combinationSum(candidates []int, target int) [][]int {
 	slices := make([][]int, 0)
 	// 排序

@@ -21,3 +21,12 @@ func TestCombinationSum(t *testing.T) {
 	t.Errorf("multiply :%v %v \n", multiply(num1, num2), len(multiply(num1, num2)))
 
 }
+func TestPow(t *testing.T) {
+	t.Errorf("myPow :%v \n", myPow(2, -2))
+}
+
+func TestPernute(t *testing.T) {
+	nums := []int{1, 2, 1}
+	t.Errorf("permute :%v \n", permuteUnique(nums))
+
+}
