@@ -4,6 +4,19 @@ import "sort"
 
 // date:2017-12-23
 
+// 题目: Permutations II
+// 给定一个重复的数组,返回它的所有的排列组合
+/*
+Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+For example,
+[1,1,2] have the following unique permutations:
+[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+*/
 func permuteUnique(nums []int) [][]int {
 	slices := make([][]int, 0)
 	// 排序

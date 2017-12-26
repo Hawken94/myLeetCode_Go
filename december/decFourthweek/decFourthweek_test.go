@@ -30,3 +30,24 @@ func TestPernute(t *testing.T) {
 	t.Errorf("permute :%v \n", permuteUnique(nums))
 
 }
+
+func TestGroupAnagrams(t *testing.T) {
+	// strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+	t.Errorf("groupAnagrams %v\n", groupAnagrams([]string{""}))
+}
+
+func TestMaxSubArray(t *testing.T) {
+	nums := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
+	t.Errorf("maxSubArray :%v \n", maxSubArray(nums))
+}
+
+func TestPlusOne(t *testing.T) {
+	digits := []int{4, 5, 6}
+	t.Errorf("plusOne %v \n", plusOne(digits))
+}
+
+func TestAddBinary(t *testing.T) {
+	a := "111"
+	b := "1"
+	t.Errorf("addBinary :%v \n", addBinary(a, b))
+}
