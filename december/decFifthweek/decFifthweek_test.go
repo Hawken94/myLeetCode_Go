@@ -29,3 +29,34 @@ func TestSpiralOrder(t *testing.T) {
 	}
 
 }
+
+func TestLengthOfLastWord(t *testing.T) {
+	tests := []struct {
+		s string
+	}{
+		{"hello world  "},
+		{"   "},
+		{"hello ,world !"},
+	}
+
+	for _, test := range tests {
+		t.Errorf("lengthOfLastWord :%v\n", lengthOfLastWord(test.s))
+	}
+}
+
+func TestMerge(t *testing.T) {
+	tests := []struct {
+		nums1 []int // 单元测试要规定nums1的cap
+		m     int
+		nums2 []int
+		n     int
+	}{
+		{
+			[]int{1, 8}, 2, []int{3, 7}, 2,
+		},
+	}
+	for _, test := range tests {
+		merge(test.nums1, test.m, test.nums2, test.n)
+		t.Errorf("merge :%v \n", test.nums1)
+	}
+}
