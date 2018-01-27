@@ -13,6 +13,7 @@ package fourthweek
 
 func solveNQueens(n int) [][]string {
 	board := [][]byte{}
+	// 这里要注意一下二维数组赋值的问题,最里面一层要先赋值
 	for i := 0; i < n; i++ {
 		var temp []byte
 		for j := 0; j < n; j++ {
