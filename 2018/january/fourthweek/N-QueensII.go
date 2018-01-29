@@ -2,7 +2,7 @@ package fourthweek
 
 // date:2018-1-27
 // 题目: N 皇后2 (N-Queens II)
-// tag:回溯 递归
+// label:回溯 递归
 
 // 与 N 皇后类似,比它简单,只需要输出符合的结果,
 import (

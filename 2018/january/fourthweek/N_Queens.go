@@ -3,7 +3,7 @@ package fourthweek
 // date:2018-1-27
 
 // 题目:N 皇后 (N-Queens)
-// tag:回溯 递归
+// label:回溯 递归
 
 // N 皇后,不能在同一行,同一列,同一对角线;用'Q' 代替皇后,输出所有结果
 // The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
