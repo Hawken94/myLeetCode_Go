@@ -32,3 +32,39 @@ func TestMerge(t *testing.T) {
 	}
 	t.Errorf("merge :%v \n", merge(list))
 }
+
+func TestInsert(t *testing.T) {
+	var tests = []struct {
+		list    []Interval
+		newList Interval
+	}{
+		{
+			[]Interval{
+				{1, 2},
+				{3, 5},
+				{6, 7},
+				{8, 10},
+				{12, 16},
+			},
+			Interval{4, 9},
+		},
+		{[]Interval{
+			{1, 3},
+			{2, 5},
+			{6, 9},
+		},
+			Interval{3, 5},
+		},
+		{
+			[]Interval{{1, 5}},
+			Interval{0, 0},
+		},
+	}
+	for _, test := range tests {
+		t.Errorf("insert :%v \n", insert(test.list, &test.newList))
+	}
+
+}
+func TestGenerateMatrix(t *testing.T) {
+	t.Errorf("generateMatrix :%v \n", generateMatrix(3))
+}
