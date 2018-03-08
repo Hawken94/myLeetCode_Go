@@ -1,5 +1,9 @@
 package fourthweek
 
+import (
+	"reflect"
+)
+
 // date:2018-1-31
 // 题目:插入新的间隔切片 (Insert Interval)
 // label:normal
@@ -32,6 +36,31 @@ func insert(intervals []Interval, newInterval *Interval) []Interval {
 	}
 	if newInterval != nil {
 		list = append(list, *newInterval)
+	}
+	return list
+}
+
+// 使用反射可以将一个值类型转换成对应的指针类型
+func insert1(intervals []Interval, newInterval Interval) []Interval {
+	var list []Interval
+	point := reflect.ValueOf(&newInterval)
+	convertPointer := point.Interface().(*Interval)
+	// [1,2],[3,5],[6,7],[8,10],[12,16] new:[4,9]
+	for _, iList := range intervals {
+		if convertPointer == nil || iList.End < convertPointer.Start {
+			list = append(list, iList)
+		} else if iList.Start > convertPointer.End {
+			list = append(list, *convertPointer)
+			list = append(list, iList)
+			convertPointer = nil
+		} else {
+			// 如果有交集
+			convertPointer.Start = min(iList.Start, convertPointer.Start)
+			convertPointer.End = max(iList.End, convertPointer.End)
+		}
+	}
+	if convertPointer != nil {
+		list = append(list, *convertPointer)
 	}
 	return list
 }
